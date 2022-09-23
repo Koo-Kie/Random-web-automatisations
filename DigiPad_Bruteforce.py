@@ -3,11 +3,11 @@ from time import sleep
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 
-with open("D:\Bureau\Projets\wordlist(1).txt") as f:
+with open("wordlist(1).txt") as f:
     lines = f.readlines()
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
-driver.get('https://digipad.app/p/216075/9a9cc3523e89a')
+driver.get('')
 print ("Opened website")
 sleep(1)
 for i in lines:
